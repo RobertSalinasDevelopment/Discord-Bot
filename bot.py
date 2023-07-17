@@ -1,5 +1,6 @@
 import discord
 import responses
+import config
 
 # Needed in order to start the client
 intents = discord.Intents.default()
@@ -44,4 +45,4 @@ async def on_message(message):
 		await send_message(message, user_message, is_private=False)
 
 # Run the client with the bot tokenh		
-client.run('MTEyOTU2MDYzODg4NTIwODE2NQ.GhzPC5.PzuJ9qDpdiyYzXx6M4iTgFeQQvTVGC3udHSxiM')
+client.run(config.token)
